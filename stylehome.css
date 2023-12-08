@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px;
+    color: #fff; 
+}
+
+.Logo img {
+    width: 100px;
+}
+
+.Listat {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.Listat nav a {
+    color: #fff; 
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.Listat nav a:hover {
+    border-bottom: 2px solid #fff; 
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
