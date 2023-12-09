@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ManCity FanShop</title>
+    <link rel="stylesheet" href="stylekits.css">
+
+
+</head>
+<body>
+    <div class="Menu">
+        <div class="Logo">
+            <img src="Fotot/80c1c919-d36f-4347-9289-1f50b46c15ac-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="Listat">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="kits.html">Kits</a>
+                <a href="#">Training</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mancity/"><img src="Fotot/icons8-facebook-24.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mancity/"><img src="Fotot/icons8-instagram-24.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/mancity"><img src="Fotot/icons8-youtube-logo-24.png" alt="Youtube"></a>
+            <a href="https://twitter.com/mancity"><img src="Fotot/icons8-twitterx-24.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <img class="main-image" src="Fotot/353660735_641116094718040_5031440712123163379_n.jpg" alt="Main Image">
+    <div id="title">
+    <h2>GOALKEEPERS: EDERSON | ORTEGA | CARSON</h2>
+    </div>
+
+    <div id="kontenti">
+       
+        <img name="mySlide" id="slideshowgoalkeeper" />
+    
+        <button onclick="ndrroImg()">Next</button>
+    </div>
+    <div id="title">
+    <h2>DEFENDERS: GVARDIOL | DIAS | STONES | WALKER </h2>
+    </div>
+
+    
+
+    <div id="kontenti">
+        <img name="mySlide" id="slideshowdefender" />
+    
+        <button onclick="ndrroImgD()">Next</button>
+    </div>
+
+
+    <div id="title">
+    <h2>MIDFIELDERS: DE BRUYNE | FODEN | GREALISH | BERNARDO</h2>
+    </div>
+
+    <div id="kontenti">
+        <img name="mySlide" id="slideshowmidfielder" />
+            
+        <button onclick="ndrroImgM()">Next</button>
+    </div>
+    <div id="title">
+
+    <h2>FORWARDS: HAALAND | ALVAREZ | DOKU </h2>
+    </div>
+
+    <div id="kontenti">
+
+        <img name="mySlide" id="slideshowforwars" />
+                
+        <button onclick="ndrroImgF()" style="margin-bottom: 100px;">Next</button>
+
+        </div>
+   
+    <footer>
+        <p>&copy; 2023 Manchester City Fanshop. All rights reserved.</p>
+    </footer>
+
+    <script>
+
+
+
+        /*Goalkeepers*/
+
+        var i = 0;
+        var imgArray = [
+        "Kits/Goalkeeper/home.png",
+        "Kits/Goalkeeper/away.png",
+        "Kits/Goalkeeper/third.png",
+        "Kits/Goalkeeper/ortega_home.png",
+        "Kits/Goalkeeper/ortega_away.png",
+        "Kits/Goalkeeper/ortega_third.png",
+        "Kits/Goalkeeper/carson_home.png",
+        "Kits/Goalkeeper/carson_away.png",
+        "Kits/Goalkeeper/carson_third.png"
+       
+        ];
+        function ndrroImg() {
+        document.getElementById('slideshowgoalkeeper').src = imgArray[i];
+        if (i < imgArray.length - 1) {
+        i++;
+        } else {
+        i = 0;
+        }
+        }
+        document.body.addEventListener('load', ndrroImg());
+
+
+/*Defenders*/
+
+        var d = 0;
+        var imgArrayD = [
+        "Kits/Defender/gvardiol_home.png",
+        "Kits/Defender/gvardiol_away.png",
+        "Kits/Defender/gvardiol_third.png",
+        "Kits/Defender/dias_home.png",
+        "Kits/Defender/dias_away.png",
+        "Kits/Defender/dias_third.png",
+        "Kits/Defender/stones_home.png",
+        "Kits/Defender/stones_away.png",
+        "Kits/Defender/stones_third.png",
+        "Kits/Defender/walker_home.png",
+        "Kits/Defender/walker_away.png",
+        "Kits/Defender/walker_third.png"
+       
+        ];
+        function ndrroImgD() {
+        document.getElementById('slideshowdefender').src = imgArrayD[d];
+        if (d < imgArrayD.length - 1) {
+        d++;
+        } else {
+        d = 0;
+        }
+        }
+        document.body.addEventListener('load', ndrroImgD());
+
+
+
+/*Midfielders*/
+
+        var m = 0;
+        var imgArrayM = [
+        "Kits/Midfielders/debruyne_away.png",
+        "Kits/Midfielders/debruyne_home.png",
+        "Kits/Midfielders/debruyne_third.png",
+        "Kits/Midfielders/foden_away.png",
+        "Kits/Midfielders/foden_home.png",
+        "Kits/Midfielders/foden_third.png",
+        "Kits/Midfielders/grealish_away.png",
+        "Kits/Midfielders/grealish_home.png",
+        "Kits/Midfielders/grealish_third.png",
+        "Kits/Midfielders/bernardo_away.png",
+        "Kits/Midfielders/bernardo_home.png",
+        "Kits/Midfielders/bernardo_third.png"
+       
+        ];
+        function ndrroImgM() {
+        document.getElementById('slideshowmidfielder').src = imgArrayM[m];
+        if (m < imgArrayM.length - 1) {
+        m++;
+        } else {
+        m = 0;
+        }
+        }
+        document.body.addEventListener('load', ndrroImgM());
+
+/*Forwards*/
+        var f = 0;
+        var imgArrayF = [
+        "Kits/Forwards/haaland_third.png",
+        "Kits/Forwards/haaland_away.png",
+        "Kits/Forwards/haaland_home.png",
+        "Kits/Forwards/alvarez_away.png",
+        "Kits/Forwards/alvarez_third.png",
+        "Kits/Forwards/alvarez_home.png",
+        "Kits/Forwards/doku_third.png",
+        "Kits/Forwards/doku_away.png",
+        "Kits/Forwards/doku_home.png"
+        
+        ];
+        function ndrroImgF() {
+        document.getElementById('slideshowforwars').src = imgArrayF[f];
+        if (f < imgArrayF.length - 1) {
+        f++;
+        } else {
+        f = 0;
+        }
+        }
+        document.body.addEventListener('load', ndrroImgF());
+        </script>
+        
+     
+
+ 
+
+</body>
+</html>
