@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ManCity FanShop</title>
+    <title>Kits</title>
     <link rel="stylesheet" href="stylekits.css">
 
 
@@ -31,171 +31,247 @@
     </div>
 
     <img class="main-image" src="Fotot/353660735_641116094718040_5031440712123163379_n.jpg" alt="Main Image">
-    <div id="title">
-    <h2>GOALKEEPERS: EDERSON | ORTEGA | CARSON</h2>
-    </div>
-
-    <div id="kontenti">
-       
-        <img name="mySlide" id="slideshowgoalkeeper" />
-    
-        <button onclick="ndrroImg()">Next</button>
-    </div>
-    <div id="title">
-    <h2>DEFENDERS: GVARDIOL | DIAS | STONES | WALKER </h2>
-    </div>
-
-    
-
-    <div id="kontenti">
-        <img name="mySlide" id="slideshowdefender" />
-    
-        <button onclick="ndrroImgD()">Next</button>
-    </div>
-
 
     <div id="title">
-    <h2>MIDFIELDERS: DE BRUYNE | FODEN | GREALISH | BERNARDO</h2>
-    </div>
-
-    <div id="kontenti">
-        <img name="mySlide" id="slideshowmidfielder" />
-            
-        <button onclick="ndrroImgM()">Next</button>
-    </div>
-    <div id="title">
-
-    <h2>FORWARDS: HAALAND | ALVAREZ | DOKU </h2>
-    </div>
-
-    <div id="kontenti">
-
-        <img name="mySlide" id="slideshowforwars" />
-                
-        <button onclick="ndrroImgF()" style="margin-bottom: 100px;">Next</button>
-
+        <h2>GOALKEEPERS: EDERSON | ORTEGA | CARSON</h2>
         </div>
-   
-    <footer>
-        <p>&copy; 2023 Manchester City Fanshop. All rights reserved.</p>
-    </footer>
+    
+        <div class="foto-container">
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/home.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With EDERSON M. 31 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/away.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With EDERSON M. 31 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/third.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With EDERSON M. 31 Printing</p>
+            </div>
 
-    <script>
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/ortega_home.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With ORTEGA 18 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/ortega_away.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With ORTEGA 18 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/ortega_third.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With ORTEGA 18 Printing</p>
+            </div>
 
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/carson_home.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With CARSON 33 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/carson_away.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With CARSON 33 Printing</p>
+            </div>
+    
+            <div class="foto">
+                <a href="#"><img src="Kits/Goalkeeper/carson_third.png" alt="Pershkrimi i Fotos 1"></a>
+                <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With CARSON 33 Printing</p>
+            </div>
+        </div>
 
+        <div id="title">
+            <h2>DEFENDERS: GVARDIOL | DIAS | STONES | WALKER</h2>
+            </div>
 
-        /*Goalkeepers*/
-
-        var i = 0;
-        var imgArray = [
-        "Kits/Goalkeeper/home.png",
-        "Kits/Goalkeeper/away.png",
-        "Kits/Goalkeeper/third.png",
-        "Kits/Goalkeeper/ortega_home.png",
-        "Kits/Goalkeeper/ortega_away.png",
-        "Kits/Goalkeeper/ortega_third.png",
-        "Kits/Goalkeeper/carson_home.png",
-        "Kits/Goalkeeper/carson_away.png",
-        "Kits/Goalkeeper/carson_third.png"
-       
-        ];
-        function ndrroImg() {
-        document.getElementById('slideshowgoalkeeper').src = imgArray[i];
-        if (i < imgArray.length - 1) {
-        i++;
-        } else {
-        i = 0;
-        }
-        }
-        document.body.addEventListener('load', ndrroImg());
-
-
-/*Defenders*/
-
-        var d = 0;
-        var imgArrayD = [
-        "Kits/Defender/gvardiol_home.png",
-        "Kits/Defender/gvardiol_away.png",
-        "Kits/Defender/gvardiol_third.png",
-        "Kits/Defender/dias_home.png",
-        "Kits/Defender/dias_away.png",
-        "Kits/Defender/dias_third.png",
-        "Kits/Defender/stones_home.png",
-        "Kits/Defender/stones_away.png",
-        "Kits/Defender/stones_third.png",
-        "Kits/Defender/walker_home.png",
-        "Kits/Defender/walker_away.png",
-        "Kits/Defender/walker_third.png"
-       
-        ];
-        function ndrroImgD() {
-        document.getElementById('slideshowdefender').src = imgArrayD[d];
-        if (d < imgArrayD.length - 1) {
-        d++;
-        } else {
-        d = 0;
-        }
-        }
-        document.body.addEventListener('load', ndrroImgD());
-
-
-
-/*Midfielders*/
-
-        var m = 0;
-        var imgArrayM = [
-        "Kits/Midfielders/debruyne_away.png",
-        "Kits/Midfielders/debruyne_home.png",
-        "Kits/Midfielders/debruyne_third.png",
-        "Kits/Midfielders/foden_away.png",
-        "Kits/Midfielders/foden_home.png",
-        "Kits/Midfielders/foden_third.png",
-        "Kits/Midfielders/grealish_away.png",
-        "Kits/Midfielders/grealish_home.png",
-        "Kits/Midfielders/grealish_third.png",
-        "Kits/Midfielders/bernardo_away.png",
-        "Kits/Midfielders/bernardo_home.png",
-        "Kits/Midfielders/bernardo_third.png"
-       
-        ];
-        function ndrroImgM() {
-        document.getElementById('slideshowmidfielder').src = imgArrayM[m];
-        if (m < imgArrayM.length - 1) {
-        m++;
-        } else {
-        m = 0;
-        }
-        }
-        document.body.addEventListener('load', ndrroImgM());
-
-/*Forwards*/
-        var f = 0;
-        var imgArrayF = [
-        "Kits/Forwards/haaland_third.png",
-        "Kits/Forwards/haaland_away.png",
-        "Kits/Forwards/haaland_home.png",
-        "Kits/Forwards/alvarez_away.png",
-        "Kits/Forwards/alvarez_third.png",
-        "Kits/Forwards/alvarez_home.png",
-        "Kits/Forwards/doku_third.png",
-        "Kits/Forwards/doku_away.png",
-        "Kits/Forwards/doku_home.png"
+            <div class="foto-container">
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/dias_home.png" alt="Dias Home"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DIAS 3 Printing</p>
+                </div>
         
-        ];
-        function ndrroImgF() {
-        document.getElementById('slideshowforwars').src = imgArrayF[f];
-        if (f < imgArrayF.length - 1) {
-        f++;
-        } else {
-        f = 0;
-        }
-        }
-        document.body.addEventListener('load', ndrroImgF());
-        </script>
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/dias_away.png" alt="Dias Away"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DIAS 3 Printing</p>
+                </div>
         
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/dias_third.png" alt="Dias Third"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DIAS 3 Printing</p>
+                </div>
+    
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/gvardiol_third.png" alt="Gvardiol Third"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GVARDIOL 24 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/gvardiol_home.png" alt="Gvardiol Home"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GVARDIOL 24 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/gvardiol_away.png" alt="Gvardiol Away"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GVARDIOL 24 Printing</p>
+                </div>
+    
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/stones_away.png" alt="Stones Away"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With STONES 5 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/stones_third.png" alt="Stones Third"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With STONES 5 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/stones_home.png" alt="Stones Home"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With STONES 5 Printing</p>
+                </div>
+
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/walker_home.png" alt="Walker Home"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With WALKER 2 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/walker_away.png" alt="Walker Away"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With WALKER 2 Printing</p>
+                </div>
+        
+                <div class="foto">
+                    <a href="kits.html"><img src="Kits/Defender/walker_third.png" alt="Walker Third"></a>
+                    <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With WALKER 2 Printing</p>
+                </div>
+            </div>
+
+            <div id="title">
+                <h2>MIDFIELDERS: DE BRUYNE | FODEN | GREALISH | BERNARDO</h2>
+                </div>
+
+                <div class="foto-container">
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/bernardo_home.png" alt="Bernardo Home"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With BERNARDO 20 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/bernardo_away.png" alt="Bernardo Away"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With BERNARDO 20 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/bernardo_third.png" alt="Bernardo Third"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With BERNARDO 20 Printing</p>
+                    </div>
+        
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/debruyne_away.png" alt="De Bruyne Away"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DE BRUYNE 17 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/debruyne_home.png" alt="De Bruyne Home "></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DE BRUYNE 17 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/debruyne_third.png" alt="De Bruyne Third"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DE BRUYNE 17 Printing</p>
+                    </div>
+        
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/foden_third.png" alt="Foden Third"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With FODEN 47 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/foden_home.png" alt="Foden Home "></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With FODEN 47 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/foden_away.png" alt="Foden Away"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With FODEN 47 Printing</p>
+                    </div>
+    
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/grealish_away.png" alt="Grealish Away"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GREALISH 10 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/grealish_third.png" alt="Grealish Third"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GREALISH 10 Printing</p>
+                    </div>
+            
+                    <div class="foto">
+                        <a href="kits.html"><img src="Kits/Midfielders/grealish_home.png" alt="Grealish Home"></a>
+                        <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With GREALISH 10 Printing</p>
+                    </div>
+                </div>
+
+                <div id="title">
+                    <h2>MIDFIELDERS: DE BRUYNE | FODEN | GREALISH | BERNARDO</h2>
+                    </div>
+
+                    <div class="foto-container">
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/alvarez_away.png" alt="Alvarez Away"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 ALVAREZ 19 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/alvarez_home.png" alt="Alvarez Home"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 ALVAREZ 19 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/alvarez_third.png" alt="Alvarez Third"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 ALVAREZ 19 Printing</p>
+                        </div>
+            
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/haaland_home.png" alt="Haaland Home"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With HAALAND 9 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/haaland_third.png" alt="Haaland Third"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With HAALAND 9 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/haaland_away.png" alt="Haaland Away"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With HAALAND 9 Printing</p>
+                        </div>
+            
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/doku_third.png" alt="Doku Third"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DOKU 11 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/doku_away.png" alt="Doku Away"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DOKU 11 Printing</p>
+                        </div>
+                
+                        <div class="foto">
+                            <a href="kits.html"><img src="Kits/Forwards/doku_home.png" alt="Doku Home"></a>
+                            <p class="pershkrimi">Manchester City Goalkeeper Jersey 2023/24 With DOKU 11 Printing</p>
+                        </div>
+                    </div>
+                    <br> <br> <br>
+    
      
 
- 
+                    <footer>
+                        <p>&copy; 2023 Manchester City Fanshop. All rights reserved.</p>
+                    </footer>
 
 </body>
 </html>
