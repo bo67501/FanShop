@@ -1,103 +1,68 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-}
-
-.Menu {
+    margin: 0;
+  }
+  
+  .slider-container {
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #34495e;
-    padding: 10px;
-    color: #fff; 
-}
-
-.Logo img {
-    width: 100px;
-}
-
-.Listat {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.Listat nav a {
-    color: #fff; 
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-.Listat nav a:hover {
-    border-bottom: 2px solid #fff; 
-}
-
-.social-icons a {
-    margin-left: 15px;
-}
-
-.social-icons img {
-    width: 24px;
-}
-
-#kontenti{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Segoe UI light', Tahoma;
-    width: 400px;
-    margin: 0 auto;
-}
-
-#kontenti img{
-    max-width: 400px;
-    height: 400px;
-    box-shadow:0 0 10px #34495e;
-}
-
-
-
-
-button{
-    margin-top: 20px;
-    width: 50%;
-    height: 45px;
-    background: #162938;
-    border-radius: 20px;
-    cursor:pointer;
-    font-size: 1em;
-    color: #fff;
-    font-weight: 500;
-}
-
-.main-image {
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide {
+    flex: 0 0 100%;
+  }
+  img {
     width: 100%;
     height: auto;
-            
-}
-
-#title{
-    width: 99.8%;
-    background-color: #34495e;
-    text-align: center;
-    height: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #34495e;
-    color: #fff;
-    font-size: larger;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-
-
-footer {
-    background: #34495e;
-    color: white;
-    text-align: center;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: 50px;
+    cursor: pointer;
+  }
+
+
+  .section{
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 99.8%;  
+  background-color: #34495e;
+  text-align: center;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #34495e;
+  color: #fff;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.section h2{
+  color: white;
+}
+
+  #prevBtn1,
+  #nextBtn1,
+  #prevBtn2,
+  #nextBtn2 {
+  width: 100px;
+  height: 50px;
+}
+
+#prevBtn1,
+#prevBtn2 {
+  left: 10px;
+}
+
+#nextBtn1,
+#nextBtn2 {
+  right: 10px;
 }
