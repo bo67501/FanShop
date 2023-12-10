@@ -1,13 +1,13 @@
 function validateForm() {
             var name = document.getElementById("name").value;
             if (!name.match(/^[a-zA-Z ]+$/)) {
-                document.getElementById("nameError").innerHTML = "Emri duhet të përmbajë vetëm shkronja dhe hapsira.";
+                document.getElementById("nameError").innerHTML = "Emri duhet të përmbajë vetëm shkronja.";
                 return false;
             }
 
             var email = document.getElementById("email").value;
             if (!email.match(/^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/)) {
-                document.getElementById("emailError").innerHTML = "Adresa email nuk është valide.";
+                document.getElementById("emailError").innerHTML = "Email nuk është valide.";
                 return false;
             }
 

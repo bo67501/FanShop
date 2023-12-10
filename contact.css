@@ -1,48 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
-.Logo {
-    padding-top: 10px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: large;
-    margin-bottom: 20px;
+.Menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px;
+    color: #fff; 
 }
 
 .Logo img {
-    max-width: 100px;
-    height: auto;
-}   
-
-.wrapper{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 600px;
-    height: 450px;
-    margin-left: 10px;
-   margin-right: 10px;
-    margin-bottom: 100px;
-}
-.wrapper .form-box login{
-    width: 100%;
-    padding: 20px;
+    width: 100px;
 }
 
-.form-box h2{
-    font-size: 2em;
-    color: #162938;
+.Listat {
     text-align: center;
 }
+
+.Listat nav a {
+    color: #fff; 
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.Listat nav a:hover {
+    border-bottom: 2px solid #fff; 
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.form-container {
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #34495e;
+}
+
+
 .input-box{
     position: relative;
     width: 100%;
@@ -50,13 +67,6 @@ body {
     border-bottom: 2px solid #162938;
     margin: 50px 0 ;
 }
-
-#name{
-    padding-right: 200px;
-
-}
-
-
 
 
 .input-box label{
@@ -92,6 +102,10 @@ body {
     font-weight: 500;
 }
 
+#description{
+    width: 400px;
+    height: 50px;
+}
 
 
 .error {
@@ -107,6 +121,17 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 50px;
+}
+
+#submit-btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {

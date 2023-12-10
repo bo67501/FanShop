@@ -7,7 +7,7 @@ function validateForm() {
 
             var email = document.getElementById("email").value;
             if (!email.match(/^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/)) {
-                document.getElementById("emailError").innerHTML = "Adresa email nuk është valide.";
+                document.getElementById("emailError").innerHTML = "Email nuk është valid.";
                 return false;
             }
 
