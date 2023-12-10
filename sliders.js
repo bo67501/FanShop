@@ -34,7 +34,7 @@
       } else if (sliderId === 'slider2') {
         showSlide(currentSlide2 + 1, sliderId);
       }else if (sliderId === 'slider3') {
-        showSlide(currentSlide4 + 1, sliderId);
+        showSlide(currentSlide3 + 1, sliderId);
       }else if (sliderId === 'slider4') {
         showSlide(currentSlide4 + 1, sliderId);
       }
