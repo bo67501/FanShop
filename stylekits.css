@@ -70,8 +70,11 @@ body {
             
 }
 
+
+
 #title{
-    width: 99.8%;
+    padding: 10px;
+    width: 100%;
     background-color: #34495e;
     text-align: center;
     height: 70px;

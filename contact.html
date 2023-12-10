@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kits</title>
+    <link rel="stylesheet" href="contact.css">
+
+
+</head>
+<body>
+    <div class="Menu">
+        <div class="Logo">
+            <img src="Fotot/80c1c919-d36f-4347-9289-1f50b46c15ac-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="Listat">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="kits.html">Kits</a>
+                <a href="training.html">Training</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/mancity/"><img src="Fotot/icons8-facebook-24.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mancity/"><img src="Fotot/icons8-instagram-24.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/mancity"><img src="Fotot/icons8-youtube-logo-24.png" alt="Youtube"></a>
+            <a href="https://twitter.com/mancity"><img src="Fotot/icons8-twitterx-24.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <div class="form-container">
+            <h2 style="color: #34495e; font-size: 35px;">Contact Us</h2>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div class="input-box">
+                    <input type="text" name="fullname" id="fullname" class="error" placeholder="Full Name">
+                    <label><span id="fullnameError" class="error"></span></label>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" class="error" placeholder="Email">
+                    <label><span id="emailError" class="error"></span></label>                    
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="phone" id="phone" class="error" placeholder="Phone Number">
+                    <label><span id="phoneError" class="error"></span></label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="subject" id="subject" class="error" placeholder="Subject">
+                    <label><span id="subjectError" class="error"></span></label>
+                </div>
+                <div class="input-box">
+                    <textarea name="description" id="description" class="error" placeholder="Description"></textarea>
+                    <label><span id="descriptionError" class="error"></span></label>
+                </div>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+        
+ 
+    </div><br><br><br><br>
+
+    <footer>
+        <p>&copy; 2023 Manchester City Fanshop. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
