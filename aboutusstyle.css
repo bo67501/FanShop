@@ -1,17 +1,18 @@
-*{
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-   font-family: "Roboto", sans-serif; 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 .Menu {
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
     background-color: #34495e;
     padding: 10px;
-    color: #fff; 
+    color: #fff;
 }
 
 .Logo img {
@@ -21,16 +22,26 @@
 .Listat {
     flex-grow: 1;
     text-align: center;
+    margin-top: 10px; 
+}
+
+.Listat nav {
+    display: flex;
+    justify-content: center;
 }
 
 .Listat nav a {
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
 }
 
 .Listat nav a:hover {
-    border-bottom: 2px solid #fff; 
+    border-bottom: 2px solid #fff;
+}
+
+.social-icons {
+    margin-top: 10px; 
 }
 
 .social-icons a {
@@ -40,6 +51,23 @@
 .social-icons img {
     width: 24px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .Menu {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .Listat {
+        margin-top: 0;
+    }
+
+    .social-icons {
+        margin-top: 0;
+    }
+}
+
 .about-us{
     padding:80px 0px;
 }

@@ -1,15 +1,18 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 .Menu {
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
   background-color: #34495e;
   padding: 10px;
-  color: #fff; 
+  color: #fff;
 }
 
 .Logo img {
@@ -17,17 +20,28 @@ body {
 }
 
 .Listat {
+  flex-grow: 1;
   text-align: center;
+  margin-top: 10px; 
+}
+
+.Listat nav {
+  display: flex;
+  justify-content: center;
 }
 
 .Listat nav a {
-  color: #fff; 
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
 }
 
 .Listat nav a:hover {
-  border-bottom: 2px solid #fff; 
+  border-bottom: 2px solid #fff;
+}
+
+.social-icons {
+  margin-top: 10px; 
 }
 
 .social-icons a {
@@ -37,51 +51,107 @@ body {
 .social-icons img {
   width: 24px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .Menu {
+      flex-direction: column; 
+      text-align: center;
+  }
+
+  .Listat {
+      margin-top: 0;
+  }
+
+  .social-icons {
+      margin-top: 0;
+  }
+}
   
+.slider-container {
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  max-width: 100%; 
+  height: auto;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
   .slider-container {
-text-align: center;    max-width: 700px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
+    max-width: 100%; 
   }
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .slide {
-    flex: 0 0 100%;
-  }
+
   .slide img {
-    max-width: 500px;
+    max-width: 100%; 
     height: auto;
   }
-  
+
   button {
-    position: absolute;
-    top: 50%;
-    font-size: 18px;
-    padding: 10px;
-    cursor: pointer;
+    font-size: 16px; 
   }
+}
 
-
-  .section{
+.section {
   padding: 25px;
   position: relative;
   overflow: hidden;
-  width: 99.8%;  
+  width: 100%;
   background-color: #34495e;
   text-align: center;
-  height: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: 2px solid #34495e;
   font-size: larger;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.section h2{
+
+.section h2 {
   color: white;
 }
+
+@media only screen and (min-width: 500px) {
+  .section {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section {
+    width: 100%;
+  }
+}
+
+
+
+
 
 #prevBtn1,
 #nextBtn1 {
