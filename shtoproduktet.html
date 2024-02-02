@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shtoproduktet.css">
+
+    <title>Shto Produkt</title>
+
+</head>
+<body>
+    <div class="Menu">
+        <div class="Logo">
+            <img src="Fotot/80c1c919-d36f-4347-9289-1f50b46c15ac-removebg-preview.png" alt="Logo">
+        </div>
+        <div class="Listat">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="kits.php">Kits</a>
+                <a href="training.php">Training</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+
+            </nav>
+        </div>
+        <div class="social-icons">
+            <a href="dashboard.php"><img src="Fotot/icons8-user-50.png" alt="User"></a>
+            <a href="https://www.facebook.com/mancity/"><img src="Fotot/icons8-facebook-24.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/mancity/"><img src="Fotot/icons8-instagram-24.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/mancity"><img src="Fotot/icons8-youtube-logo-24.png" alt="Youtube"></a>
+            <a href="https://twitter.com/mancity"><img src="Fotot/icons8-twitterx-24.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <h1>Regjistro Produktet</h1>
+    <div class="form-container">
+    <h2>Kits</h2>
+    <form action="shto_produkt.php" method="post" enctype="multipart/form-data">
+        <label for="title">Titulli:</label>
+        <input type="text" name="title" required><br>
+
+        <label for="description">Pershkrimi:</label>
+        <textarea name="description" required></textarea><br>
+
+        <label for="price">Cmimi:</label>
+        <input type="text" name="price" required><br>
+
+        <label for="image">Foto:</label>
+        <input type="file" name="image" accept="image/*" required><br>
+
+        <label for="author">Autori:</label>
+        <input type="text" name="author" required><br>
+
+        <input type="submit" value="Shto Produkte">
+    </form>
+</div>
+
+    <div class="form-container">
+    <h2>Training</h2>
+    <form action="shto_produkt_training.php" method="post" enctype="multipart/form-data">
+        <label for="title">Titulli:</label>
+        <input type="text" name="title" required><br>
+
+        <label for="description">Pershkrimi:</label>
+        <textarea name="description" required></textarea><br>
+
+        <label for="price">Cmimi:</label>
+        <input type="text" name="price" required><br>
+
+        <label for="image">Foto:</label>
+        <input type="file" name="image" accept="image/*" required><br>
+
+        <label for="author">Autori:</label>
+        <input type="text" name="author" required><br>
+
+        <input type="submit" value="Shto Produkte">
+    </form>
+</div>
+<footer>
+    <p>&copy; 2023 Manchester City Fanshop. All rights reserved.</p>
+</footer>
+</body>
+</html>

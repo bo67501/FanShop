@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Order Here</title>
     <link rel="stylesheet" href="contact.css">
 
 
@@ -33,19 +33,23 @@
     </div>
 
     <div class="form-container">
-            <h2 style="color: #34495e; font-size: 35px;">Contact Us</h2>
-            <form id="contactForm" action="process_form.php" method="post" onsubmit="return validateForm()">
+            <h2 style="color: #34495e; font-size: 35px;">Order Here</h2>
+            <form id="contactForm" action="orders.php" method="post" onsubmit="return validateForm()">
                 <div class="input-box">
-                    <input type="text" name="emri" id="fullname" class="error" placeholder="Full Name:">
-                    <label><span id="fullnameError" class="error"></span></label>
+                    <input type="text" name="username" id="fullname" class="error" placeholder="Username:">
+                    <label><span id="usernameError" class="error"></span></label>
                 </div>
                 <div class="input-box">
                     <input type="email" name="email" id="email" class="error" placeholder="Email: ">
                     <label><span id="emailError" class="error"></span></label>                    
                 </div>
                 <div class="input-box">
-                    <input type="text" name="mesazhi" id="subject" class="error" placeholder="Message: ">
-                    <label><span id="subjectError" class="error"></span></label>
+                    <input type="number" name="porosia_id" id="subject" class="error" placeholder="ID e Porosise: ">
+                    <label><span id="porosia_idError" class="error"></span></label>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="sasia" id="subject" class="error" placeholder="Sasia: ">
+                    <label><span id="sasiaError" class="error"></span></label>
                 </div>
                 <button type="submit" id="submit-btn">Submit</button>
             </form>

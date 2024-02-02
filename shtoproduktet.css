@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.Menu {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495e;
+    padding: 10px;
+    color: #fff;
+}
+
+.Logo img {
+    width: 100px;
+}
+
+.Listat {
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 10px; 
+}
+
+.Listat nav {
+    display: flex;
+    justify-content: center;
+}
+
+.Listat nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.Listat nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.social-icons {
+    margin-top: 10px; 
+}
+
+.social-icons a {
+    margin-left: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+.form-container {
+    background-color: #fff; 
+    margin: 70px auto 70px auto ;;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px #34495e;
+}
+
+h2 {
+    color: #333; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; 
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #34495e; 
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .form-container {
+        width: 45%;
+    }
+}
+
+h2{
+    padding-bottom: 15px;
+}
+
+h1{
+    padding-top: 50px;
+    text-align: center;
+}
+
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
