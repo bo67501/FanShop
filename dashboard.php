@@ -35,7 +35,7 @@ $username = $_SESSION["username"];
     </div>
     <div class="Listat">
         <nav>
-            <a href="home.html">Home</a>
+        <a href="home.html">Home</a>
             <a href="kits.php">Kits</a>
             <a href="training.php">Training</a>
             <a href="aboutus.html">About Us</a>
